@@ -1,1 +1,1 @@
-# shopping-cart-nodejs
+# Shopping Cart with NodeJS
