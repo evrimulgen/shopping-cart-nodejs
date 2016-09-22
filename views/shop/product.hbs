@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+      <h1>{{product.name}}</h1>
+      <div class="thumbnail">
+          <img src="{{product.imagePath}}" alt="{{product.title}}" class="img-responsive"/>
+      </div>
+      <p>
+          {{product.description}}
+      </p>
+      {{#if stock}}
+      <span style="color:green;">In Stock.</span>
+      {{else}}
+      <span style="color:red;">No Available</span>
+      {{/if}}
+      <span style="display:block;">${{product.price}}</span>
+      <a style="width:100%;" href="/add-to-cart/{{product._id}}" class="btn btn-default" role="button"><i class="fa fa-shopping-cart"></i>Add to Basket</a>
+    </div>
+</div>

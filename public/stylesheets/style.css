@@ -1,0 +1,22 @@
+/* Reset some css */
+
+* {
+  box-sizing: border-box;
+}
+
+
+.thumbnail img {
+  max-width: 150px;
+}
+.container-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 200px;
+}
+.item {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  max-width: 285px;
+}

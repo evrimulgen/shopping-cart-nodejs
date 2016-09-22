@@ -1,0 +1,48 @@
+<div class="row">
+  {{> admin-menu}}
+  <div class="col-md-8">
+    <div class="col-md-12 col-md-offset-1">
+      <h1>Update Product</h1>
+      <form action="/admin/{{product._id}}" method="POST">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="form-group">
+          <label>Sku</label>
+          <input value="{{product.sku}}" type="text" id="sku" name="sku" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Image</label>
+          <input value="{{product.imagePath}}" type="text" id="imagePath" name="imagePath" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Name</label>
+          <input value="{{product.name}}" type="text" id="nameProduct" name="nameProduct" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <input value="{{product.description}}" type="text" id="descriptionProduct" name="descriptionProduct" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+            <input value="{{product.category}}" type="text" id="categoryProduct" name="categoryProduct" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Size</label>
+          <input value="{{product.size}}" type="text" id="sizeProduct" name="sizeProduct" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Color</label>
+          <input value="{{product.color}}" type="text" id="colorProduct" name="colorProduct" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Stock</label>
+          <input value="{{product.stock}}" type="text" id="stock" name="stock" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Price</label>
+          <input value="{{product.price}}" type="text" id="price" name="price" class="form-control">
+        </div>
+        <button type="submit" name="button" class="btn btn-primary">Update Product</button>
+      </form>
+    </div>
+  </div>
+</div>
